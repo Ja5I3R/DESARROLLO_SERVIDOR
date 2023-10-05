@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio de sesion</title>
+</head>
+<body>
+    <form action="recogedatos.php" method="get">
+        <label for="n1">Nombre</label><input type="text" id="n1" name="nombre" placeholder="Nombre"><br>
+        <label for="n2">Edad</label><input type="number" id="n2" name="edad" placeholder="Edad"><br>
+        <label for="n3">Sexo</label><select name="sexo" id="n3">
+            <option value="hombre">Hombre</option>
+            <option value="mujer">Mujer</option>
+        </select><br>
+        <label for="n4">Color</label><input type="color" id="n4" name="color" placeholder="Color"><br>
+        <input type="radio" name="noticias" value="Si" id="n5"><label for="n5">Quiero recibir noticias</label>
+        <input type="radio" name="noticias" value="No" id="n6"><label for="n6">No quiero recibir noticias</label><br>
+        <h4>Horas de llegada</h4>
+        <input type="checkbox" name="hora1" id="n7" value="Mañana"><label for="n7">Mañana</label><br>
+        <input type="checkbox" name="hora2" id="n8" value="Tarde"><label for="n8">Tarde</label><br>
+        <input type="checkbox" name="hora3" id="n9" value="Noche"><label for="n9">Noche</label><br>
+        <input type="submit">
+    </form>
+</body>
+</html>

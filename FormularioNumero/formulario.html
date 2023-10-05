@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prueba de formulario</title>
+</head>
+<body>
+    <form action="recogeDatos1.php" method="Get">
+        <label for="num1">Numero</label> <input type="number" name="numero" id="num1">
+        <br>
+        <input type="submit">
+    </form>
+    <hr>
+    <form action="recogeDatos2.php" method="Get">
+        <label for="num2">Numero</label> 
+        <select name="numero" id="num2">
+            <option value="0">Opcion 0</option>
+            <option value="1">Opcion 1</option>
+            <option value="2">Opcion 2</option>
+        </select>
+        <br>
+        Color: <input type="color" name="color">
+        <br>
+        <input type="submit">
+    </form>
+</body>
+</html>

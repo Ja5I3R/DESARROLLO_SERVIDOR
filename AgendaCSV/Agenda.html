@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenda</title>
+    <style>
+        body{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Añadir en agenda</h1>
+    <hr>
+    <form action="guardarAgenda.php" method="POST">
+        <label for="n1">Nombre: </label><input type="text" id="n1" name="nombre" placeholder="Nombre"><br><br>
+        <label for="n2">Apellido: </label><input type="text" id="n2" name="apellido" placeholder="Apellido"><br><br>
+        <label for="n3">Numero de telefono: </label><input type="number" name="numeroTel" id="n3" placeholder="Numero de telefono"><br><br>
+        <input type="submit" value="Enviar a agenda">
+    </form>
+    <br>
+    <form action="verAgenda.php">
+        <input type="submit" value="Ver agenda">
+    </form>
+</body>
+</html>

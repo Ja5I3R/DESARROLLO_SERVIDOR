@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio de sesion</title>
+</head>
+<body>
+    <form action="recogedatos.php" method="POST">
+        <label for="n1">Nombre</label><input type="text" id="n1" name="nombre" placeholder="Nombre"><br>
+        <label for="n2">Matricula</label><input type="text" id="n2" name="matricula" placeholder="Matricula"><br>
+        <label for="n3">Telefono</label><input type="number" id="n3" name="telefono" placeholder="Telefono"><br>
+        <label for="n4">Email</label><input type="email" id="n4" name="email" placeholder="Email"><br>
+        <label for="n5">Marca</label><select name="marca" id="n5">
+            <option value="Volvo">Volvo</option>
+            <option value="Hyundai">Hyundai</option>
+            <option value="Audi">Audi</option>
+        </select><br>
+        <input type="radio" name="seguro" value="Si" id="n6"><label for="n6">Si usa seguro</label>
+        <input type="radio" name="seguro" value="No" id="n7"><label for="n7">No usa seguro</label><br>
+        <h4>Horas de llegada</h4>
+        <input type="checkbox" name="hora1" id="n8" value="Mañana"><label for="n8">Mañana</label><br>
+        <input type="checkbox" name="hora2" id="n9" value="Tarde"><label for="n9">Tarde</label><br>
+        <input type="checkbox" name="hora3" id="n10" value="Noche"><label for="n10">Noche</label><br>
+        <input type="submit">
+    </form>
+</body>
+</html>
