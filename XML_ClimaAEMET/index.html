@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seleccion de municipio</title>
+    <style>
+        body{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Selecciona un municipio para ver su prediccion</h1>
+    <form action="viewPrediction.php" method="POST">
+        <select name="predictionValue" id="predictionValue">
+            <option value="madrid">Madrid</option>
+            <option value="alcorcon">Alcorcon</option>
+            <option value="fuenlabrada">Fuenlabrada</option>
+        </select>
+        <input type="submit" value="Ver">
+    </form>
+</body>
+</html>
