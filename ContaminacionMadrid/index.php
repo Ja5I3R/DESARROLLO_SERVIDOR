@@ -87,11 +87,22 @@
             echo "</tr>";
             
             for($j = 0; $j < 10; $j++){
+                //Fila actual de datos
                 $encabezados = fgets($file);
+
+                //Datos separados en array
                 $linea = explode(";", $encabezados);
+
+                //Dato especifico para nombre de estacion
                 $cadena = $linea[4];
+
+                //Separacion del dato del nombre en un array
                 $partes = explode("_", $cadena);
+
+                //Codigo de la estacion en base al codigo separado
                 $codigoEstacion = $partes[0];
+
+                //Codigo de magnitud en base al dato de la tabla "Magnitud"
                 $codigoMagnitud = $linea[3];
                 
                 echo "
