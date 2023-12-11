@@ -23,6 +23,7 @@
         foreach ($data as $line) {
             $register = $db->exec('INSERT INTO alumnos (Nombre, Apellido) VALUES ("' . $line[0] . '", "'. $line[1] .'")');
         }
+        echo "Se han importado los datos de manera correcta";
     ?>
 </body>
 </html>
